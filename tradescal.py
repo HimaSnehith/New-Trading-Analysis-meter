@@ -10,7 +10,6 @@ window = tkinter.Tk()
 window.title("Trades calculator")
 window.minsize(500, 500)
 window.maxsize(500, 500)
-# @@@@@@@@@@@@ Functions  @@@@@@@@@@@@
 
 def winning_trade():
     global total_trades, win_trade
@@ -35,9 +34,7 @@ def calculate_ratio():
               f"Winning Trades = {win_trade}/{round(winning_ratio, 1)}%\n" \
               f"Losing Trades = {lose_trade}/{round(losing_ratio, 1)}%"
     messagebox.showinfo(title="Win/Lose Ratio", message=message)
-
-
-# @@@@@@@@@@@@  Components  @@@@@@@@@@@@
+    
 trades_label = tkinter.Label(text="Trades", font=FONT, bg="#5d6c71")
 trades_label.place(x=220, y=100)
 
